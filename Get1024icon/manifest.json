@@ -1,0 +1,34 @@
+﻿{
+    "name": "Get1024icon",
+    "version": "1.0",
+    "description": "Get Appstore 1024 icon with one click - rayps.com",
+
+    
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
+    "content_scripts": [
+        {
+            "run_at" : "document_start",
+            "css": [
+                "style.css"
+            ],
+            "js": [
+                "jquery.min.js",
+                "script.js"
+            ],
+            "matches": [
+                "http://itunes.apple.com/*/app/*",
+                "https://itunes.apple.com/*/app/*"
+            ],
+            "include_globs": [
+                "http://itunes.apple.com/*/app/*",
+                "https://itunes.apple.com/*/app/*"
+            ]
+        }
+
+    ],
+    "manifest_version": 2
+}
