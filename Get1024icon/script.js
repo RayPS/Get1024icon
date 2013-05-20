@@ -16,7 +16,7 @@ $(function () {
 
     icon.bind('click', function () {
       var itunesIconURL = $('#left-stack>div:first>a:first>div:first>img:first')[0].src
-      var BigSizeIconURL = itunesIconURL.replace("175x175-75.jpg","png")
+      var BigSizeIconURL = itunesIconURL.replace(".175x175-75","").replace(".jpg",".png")
       window.open(BigSizeIconURL);
     });
 
